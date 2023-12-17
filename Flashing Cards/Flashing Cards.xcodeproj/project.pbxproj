@@ -12,9 +12,12 @@
 		63BDF9AB2B2F3B5400C22C28 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BDF9AA2B2F3B5400C22C28 /* Item.swift */; };
 		63BDF9AD2B2F3B5500C22C28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63BDF9AC2B2F3B5500C22C28 /* Assets.xcassets */; };
 		63BDF9B02B2F3B5500C22C28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63BDF9AF2B2F3B5500C22C28 /* Preview Assets.xcassets */; };
+		C00F00BAE434A3E5466FC8A0 /* Pods_Flashing_Cards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70D461457B8A68FAA7C395B /* Pods_Flashing_Cards.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D82A847911C67FD89FC1D69 /* Pods-Flashing Cards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flashing Cards.release.xcconfig"; path = "Target Support Files/Pods-Flashing Cards/Pods-Flashing Cards.release.xcconfig"; sourceTree = "<group>"; };
+		460773DB82BADBC4583A1DFD /* Pods-Flashing Cards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flashing Cards.debug.xcconfig"; path = "Target Support Files/Pods-Flashing Cards/Pods-Flashing Cards.debug.xcconfig"; sourceTree = "<group>"; };
 		63BDF9A32B2F3B5400C22C28 /* Flashing Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flashing Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BDF9A62B2F3B5400C22C28 /* Flashing_CardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashing_CardsApp.swift; sourceTree = "<group>"; };
 		63BDF9A82B2F3B5400C22C28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		63BDF9AC2B2F3B5500C22C28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63BDF9AF2B2F3B5500C22C28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		63BDF9B12B2F3B5500C22C28 /* Flashing_Cards.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Flashing_Cards.entitlements; sourceTree = "<group>"; };
+		C70D461457B8A68FAA7C395B /* Pods_Flashing_Cards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flashing_Cards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C00F00BAE434A3E5466FC8A0 /* Pods_Flashing_Cards.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A5905754663E2C78FAE788F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C70D461457B8A68FAA7C395B /* Pods_Flashing_Cards.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		63BDF99A2B2F3B5400C22C28 = {
 			isa = PBXGroup;
 			children = (
 				63BDF9A52B2F3B5400C22C28 /* Flashing Cards */,
 				63BDF9A42B2F3B5400C22C28 /* Products */,
+				732F309786FC2B09F07D52AA /* Pods */,
+				3A5905754663E2C78FAE788F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +87,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		732F309786FC2B09F07D52AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				460773DB82BADBC4583A1DFD /* Pods-Flashing Cards.debug.xcconfig */,
+				0D82A847911C67FD89FC1D69 /* Pods-Flashing Cards.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63BDF9B42B2F3B5500C22C28 /* Build configuration list for PBXNativeTarget "Flashing Cards" */;
 			buildPhases = (
+				4F46CF03C19DE239AAA8EC76 /* [CP] Check Pods Manifest.lock */,
 				63BDF99F2B2F3B5400C22C28 /* Sources */,
 				63BDF9A02B2F3B5400C22C28 /* Frameworks */,
 				63BDF9A12B2F3B5400C22C28 /* Resources */,
+				7A854BBF9B2B8B9232626617 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F46CF03C19DE239AAA8EC76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flashing Cards-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A854BBF9B2B8B9232626617 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flashing Cards/Pods-Flashing Cards-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flashing Cards/Pods-Flashing Cards-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Flashing Cards/Pods-Flashing Cards-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		63BDF99F2B2F3B5400C22C28 /* Sources */ = {
@@ -271,6 +339,7 @@
 		};
 		63BDF9B52B2F3B5500C22C28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 460773DB82BADBC4583A1DFD /* Pods-Flashing Cards.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,6 +368,7 @@
 		};
 		63BDF9B62B2F3B5500C22C28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D82A847911C67FD89FC1D69 /* Pods-Flashing Cards.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

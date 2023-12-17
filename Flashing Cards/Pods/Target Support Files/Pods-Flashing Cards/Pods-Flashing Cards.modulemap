@@ -1,0 +1,6 @@
+framework module Pods_Flashing_Cards {
+  umbrella header "Pods-Flashing Cards-umbrella.h"
+
+  export *
+  module * { export * }
+}
